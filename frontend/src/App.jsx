@@ -13,6 +13,15 @@ import Footer from './components/Footer'
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Verify from './pages/Verify'
+import Disease from './components/Disease'  // ✅ Add this line
+import Result from './components/Result'
+
+import HeartForm from './components/HeartForm'
+import DiabetesForm from './components/DiabetesForm'
+import LiverForm from './components/LiverForm'
+import BreastCancerForm from './components/BreastCancerForm'
+import ParkinsonsForm from './components/ParkinsonsForm'
+
 
 const App = () => {
   return (
@@ -30,6 +39,13 @@ const App = () => {
         <Route path='/my-appointments' element={<MyAppointments />} />
         <Route path='/my-profile' element={<MyProfile />} />
         <Route path='/verify' element={<Verify />} />
+        <Route path='/disease' element={<Disease />} />
+        <Route path='/predict-diabetes' element={<DiabetesForm />} />
+        <Route path='/predict-heart' element={<HeartForm />} />
+        <Route path='/predict-liver' element={<LiverForm />} />
+        <Route path='/predict-parkinsons' element={<ParkinsonsForm />} />
+        <Route path='/predict-breast-cancer' element={<BreastCancerForm />} />
+        <Route path='/result' element={<Result />} />
       </Routes>
       <Footer />
     </div>
