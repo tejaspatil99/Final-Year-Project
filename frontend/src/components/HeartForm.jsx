@@ -22,19 +22,19 @@ const HeartForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     const formData = {
-      Age,
-      Sex,
-      Chest_Pain,
-      Resting_Blood_Pressure,
-      Cholestrol,
-      Fasting_Blood_Pressure,
-      Resting_Electrocardiographic_Results,
-      Heart_Rate_Achieved,
-      Exercise_Induced_Angina,
-      Oldpeak,
-      Slope,
-      Number_of_Vessels_Colored_by_Fluoroscopy,
-      Thalassemia,
+      age: Age,
+      sex: Sex,
+      cp: Chest_Pain,
+      trestbps: Resting_Blood_Pressure,
+      chol: Cholestrol,
+      fbs: Fasting_Blood_Pressure,
+      restecg: Resting_Electrocardiographic_Results,
+      thalach: Heart_Rate_Achieved,
+      exang: Exercise_Induced_Angina,
+      oldpeak: Oldpeak,
+      slope: Slope,
+      ca: Number_of_Vessels_Colored_by_Fluoroscopy,
+      thal: Thalassemia,
     };
 
     try {
@@ -72,7 +72,8 @@ const HeartForm = () => {
             value={Age}
             onChange={(e) => {
               const val = e.target.value;
-              if (val === "" || (val >= 29 && val <= 77)) {
+              const num = Number(val); // Convert string to number
+              if (val === "" || (num >= 0 && num <= 77)) {
                 setAge(val);
               }
             }}
@@ -209,7 +210,7 @@ const HeartForm = () => {
             value={Heart_Rate_Achieved}
             onChange={(e) => {
               const val = e.target.value;
-              if (val === "0" || (val >= 71 && val <= 202)) {
+              if (val === "0" || (val >= 0 && val <= 202)) {
                 setHeartRate(val);
               }
             }}

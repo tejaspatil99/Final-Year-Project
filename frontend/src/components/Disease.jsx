@@ -17,7 +17,7 @@ const Disease = () => {
   };
 
   return (
-    <div className="max-w-xl mx-auto mt-10 p-6 bg-white rounded-xl shadow-lg">
+    <div className="max-w-xl mx-auto mt-24 p-6 bg-white rounded-xl shadow-lg">
       <h2 className="text-2xl font-bold text-center mb-6">Select Disease for Prediction</h2>
 
       <div className="mb-6">
@@ -27,10 +27,10 @@ const Disease = () => {
           className="border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400 w-full"
         >
           <option value="">Select Disease</option>
-          <option value="heart-disease">Heart Disease</option>
           <option value="diabetes">Diabetes</option>
-          <option value="kidney-disease">Kidney Disease</option>
-          <option value="stroke">Stroke</option>
+          <option value="heart">Heart Disease</option>
+          <option value="breast-cancer">Breast Cancer</option>
+          <option value="liver">Liver Disease</option>
           {/* Add more diseases as required */}
         </select>
       </div>

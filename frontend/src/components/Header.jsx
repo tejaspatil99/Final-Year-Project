@@ -30,6 +30,8 @@ const Header = () => {
           <img className="w-3" src={assets.arrow_icon} alt="" />
         </a>
 
+        
+
         {/* Predict Disease Button */}
         <button
           onClick={() => navigate("/disease")}
