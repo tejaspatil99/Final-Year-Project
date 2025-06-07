@@ -30,11 +30,11 @@ import doc12 from './doc12.png'
 import doc13 from './doc13.png'
 import doc14 from './doc14.png'
 import doc15 from './doc15.png'
-import Dermatologist from './Dermatologist.svg'
-import General_physician from './General_physician.svg'
-import Gynecologist from './Gynecologist.svg'
-import Neurologist from './Neurologist.svg'
-import Pediatricians from './Pediatricians.svg'
+import General_physician from './General_physician.jpg'
+import Diabetologist from './Diabetologist.png'
+import Cardiologist from './Cardiologist.jpg'
+import BreastCancer from './BreastCancer.png'
+import Hepatologist from './Hepatologist.jpg'
 
 
 export const assets = {
@@ -63,25 +63,21 @@ export const specialityData = [
         image: General_physician
     },
     {
-        speciality: 'Diabetes',
-        image: Gynecologist
+        speciality: 'Diabetologist',
+        image: Diabetologist
     },
     {
-        speciality: 'Heart',
-        image: Dermatologist
+        speciality: 'Cardiologist', // updated from 'Heart'
+        image: Cardiologist
     },
     {
-        speciality: 'Breast Cancer',
-        image: Pediatricians
+        speciality: 'Breast Cancer Specialist',
+        image: BreastCancer
     },
     {
-        speciality: 'Liver Disease',
-        image: Neurologist
+        speciality: 'Hepatologist', // updated from 'Liver'
+        image: Hepatologist
     },
-    // {
-    //     speciality: 'Liver',
-    //     image: Gastroenterologist
-    // },
 ]
 
 export const doctors = [
@@ -117,7 +113,7 @@ export const doctors = [
         _id: 'doc3',
         name: 'Dr. Sarah Patel',
         image: doc3,
-        speciality: 'Pneumonia',
+        speciality: 'Liver',
         degree: 'MBBS',
         experience: '1 Years',
         about: 'Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies. Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies.',
@@ -201,7 +197,7 @@ export const doctors = [
         _id: 'doc9',
         name: 'Dr. Ava Mitchell',
         image: doc9,
-        speciality: 'Pneumonia',
+        speciality: 'Liver',
         degree: 'MBBS',
         experience: '1 Years',
         about: 'Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies. Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies.',
@@ -285,7 +281,7 @@ export const doctors = [
         _id: 'doc15',
         name: 'Dr. Amelia Hill',
         image: doc15,
-        speciality: 'Pneumonia',
+        speciality: 'Liver',
         degree: 'MBBS',
         experience: '1 Years',
         about: 'Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies. Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies.',

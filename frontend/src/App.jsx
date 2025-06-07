@@ -13,7 +13,7 @@ import Footer from './components/Footer'
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Verify from './pages/Verify'
-import Disease from './components/Disease'  // ✅ Add this line
+import Disease from './components/Disease'
 import Result from './components/Result'
 
 import HeartForm from './components/HeartForm'
